@@ -274,103 +274,103 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (romanirani.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("رمان ایرانی");
+                    books = dataBaseHelper.getFilter("رمان ایرانی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (romankharegi.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("رمان خارجی");
+                    books = dataBaseHelper.getFilter("رمان خارجی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (dastankotah.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("داستان کوتاه");
+                    books = dataBaseHelper.getFilter("داستان کوتاه");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (mazhabi.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("مذهبی");
+                    books = dataBaseHelper.getFilter("مذهبی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (tarikhi.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("تاریخی");
+                    books = dataBaseHelper.getFilter("تاریخی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (sher.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("شعر");
+                    books = dataBaseHelper.getFilter("شعر");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (adabi.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("ادبی");
+                    books = dataBaseHelper.getFilter("ادبی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (amozesh.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("آموزشی");
+                    books = dataBaseHelper.getFilter("آموزشی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (elmi.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("علمی");
+                    books = dataBaseHelper.getFilter("علمی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (english.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("زبان انگلیسی");
+                    books = dataBaseHelper.getFilter("زبان انگلیسی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (moafaghiat.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("روانشناسی و موفقیت");
+                    books = dataBaseHelper.getFilter("روانشناسی و موفقیت");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (etelaat.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("اطلاعات عمومی");
+                    books = dataBaseHelper.getFilter("اطلاعات عمومی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (pezeshki.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("پزشکی");
+                    books = dataBaseHelper.getFilter("پزشکی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (zendeginame.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("زندگی نامه");
+                    books = dataBaseHelper.getFilter("زندگی نامه");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (varzesh.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("ورزشی");
+                    books = dataBaseHelper.getFilter("ورزشی");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (adabvarosom.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("آداب و رسوم");
+                    books = dataBaseHelper.getFilter("آداب و رسوم");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();
                 }
                 if (sayer.isChecked()) {
-                    books = dataBaseHelper.getRomanKharegi("سایر");
+                    books = dataBaseHelper.getFilter("سایر");
                     adapterBookList = new AdapterBookList(getApplicationContext(), books);
                     recyclerView.setAdapter(adapterBookList);
                     onClickForAll();

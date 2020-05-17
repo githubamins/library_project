@@ -130,13 +130,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return books;
     }
 
-    public boolean deleteNote(int id) {
+    public boolean deleteBook(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(LIB_TABLE_NAME, LIB_ID + " = ?", new String[]{String.valueOf(id)});
         return true;
     }
 
-    public boolean editNote(Library book) {
+    public boolean editBook(Library book) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues value = new ContentValues();
         value.put(LIB_BOOK_NAME, book.getBookName());
@@ -197,7 +197,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         }return books;
     }
 
-    public ArrayList<Library> getRomanKharegi(String s) {
+    public ArrayList<Library> getFilter(String s) {
         ArrayList<Library> books = new ArrayList<>();
         String query = "Select * from " + LIB_TABLE_NAME+ "WHERE "+ LIB_TOPIC +" = " + "'"+s+"'";
         SQLiteDatabase db = this.getReadableDatabase();

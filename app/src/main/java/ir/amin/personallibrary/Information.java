@@ -227,7 +227,7 @@ public class Information extends AppCompatActivity implements View.OnClickListen
                         }
                         n.setLendCheck(b);
 
-                        db.editNote(n);
+                        db.editBook(n);
                         Snackbar.make(parent_view, "کتاب با موفقیت ویرایش شد", BaseTransientBottomBar.LENGTH_LONG).show();
                         finish();
 
@@ -240,7 +240,7 @@ public class Information extends AppCompatActivity implements View.OnClickListen
             //محتویات دکمه حذف
             case R.id.material_unelevated_button3: {
                 if (isEdit) {
-                    db.deleteNote(editid);
+                    db.deleteBook(editid);
                     Snackbar.make(parent_view, "کتاب با موفقیت حذف شد", BaseTransientBottomBar.LENGTH_LONG).show();
                     finish();
                 }
